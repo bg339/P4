@@ -527,49 +527,61 @@ p.cop{
         text-decoration: none;
         transition: all .35s ease;
       }
+
+      .WebContainer{
+        width:100%;
+        min-width:1000px;
+        height:auto;
+    }
+
+      @media (max-width:1400px) {
+        .navbar .navbar-brand .header-top-bar .banner{
+          height: auto;
+        }
+    }
  
     @media screen and (max-width: 767px) {
-      .sidenav {
+      .sidenav img{
         height: auto;
         padding: 15px;
       }
       .row.content {height:auto;} 
     }
 
-    @media (max-width: 120px) {
-        .banner .block h1 {
-          font-size: 38px;
-          line-height: 50px;
-        }
-        .banner {
-          min-height: 450px;
-          background: #fff !important;
-        }
+    @media (max-width: 480px) {
+      .banner .block h1 {
+        font-size: 38px;
+        line-height: 50px;
       }
-      
-      @media (max-width: 400px) {
-        .banner .block h1 {
-          font-size: 28px;
-          line-height: 40px;
-        }
-        .banner {
-          min-height: 450px;
-          background: #fff !important;
-        }
+      .banner .banner img{
+        min-height: 450px;
+        background: #fff !important;
       }
-      
-      @media (max-width: 768px) {
-        .banner .block h1 {
-          font-size: 56px;
-          line-height: 70px;
-        }
-        .banner {
-          background: #fff !important;
-        }
+    }
+    
+    @media (max-width: 400px) {
+      .banner .block h1 {
+        font-size: 28px;
+        line-height: 40px;
       }
-      
-      @media (max-width: 992px) {
-        .banner {
-          background: #fff !important;
-        }
+      .banner {
+        min-height: 450px;
+        background: #fff !important;
       }
+    }
+    
+    @media (max-width: 768px) {
+      .banner .block h1 {
+        font-size: 56px;
+        line-height: 70px;
+      }
+      .banner {
+        background: #fff !important;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .banner {
+        background: #fff !important;
+      }
+    }
